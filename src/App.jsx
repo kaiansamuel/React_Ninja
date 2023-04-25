@@ -1,11 +1,20 @@
 'use strict';
 
-import React from 'react'
+import React, { Component } from 'react'
 import Title from './Title';
 
+class App extends Component {
+  render() {
+    return (
+      <div className="container">
+      My App    
+      <Title name='Kaian Samuel'/>
+    </div>
+    )
+  }
+}
 
-
-function App() {
+/* function App() {
   
   return (
     <div className="App">
@@ -14,5 +23,5 @@ function App() {
     </div>
   )
 }
-
+ */
 export default App
