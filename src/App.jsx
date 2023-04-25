@@ -1,27 +1,31 @@
 'use strict';
 
 import React, { Component } from 'react'
-import Title from './Title';
+import Square from './Square';
 
-class App extends Component {
+/* class App extends Component {
   render() {
     return (
       <div className="container">
-      My App    
-      <Title name='Kaian Samuel'/>
-    </div>
+        {['blue', 'red', 'green'].map((square => (
+          <Square color='blue'/>
+        )))}
+      
+      </div>
     )
   }
-}
+} */
 
-/* function App() {
+ const App = () => {
   
   return (
-    <div className="App">
-      My App    
-      <Title name='Kaian Samuel'/>
-    </div>
+   <div className="container">
+        {['blue', 'red', 'green'].map((square => (
+          <Square key={square} color={square} />
+        )))}
+      
+      </div>
   )
 }
- */
+ 
 export default App
