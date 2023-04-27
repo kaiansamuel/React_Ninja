@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react'
 import Square from './Square';
+import Button from './Button';
 
 /* class App extends Component {
   render() {
@@ -19,12 +20,10 @@ import Square from './Square';
  const App = () => {
   
   return (
-   <div className="container">
-        {['blue', 'red', 'green'].map((square => (
-          <Square key={square} color={square} />
-        )))}
-      
-      </div>
+   <div className="container" onClick={() => alert('Clicou')
+   }>
+     <Button>Texto</Button> 
+    </div>
   )
 }
  
